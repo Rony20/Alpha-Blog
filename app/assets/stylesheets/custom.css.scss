@@ -1,0 +1,54 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #ffffff;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#home-container {
+    margin-top: 45px;
+}
+
+.jumbotron {
+    background-image: asset-url("anastasiia-kamil.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 68vh;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+    background-color: lightgrey;
+}
+
+#sticky-footer {
+    flex-shrink: none;
+}
+
+.navbar-toggler {
+    background: ghostwhite;
+}
+// .navbar-brand {
+//     font-size: 3rem;
+// }
+    
+// h1 {    
+//     color: red;
+// }
