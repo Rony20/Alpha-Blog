@@ -1,8 +1,8 @@
-<% if @article.errors.any? %>
+<% if model_object.errors.any? %>
     <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        <h4 class="alert-heading">The following errors prevented the article from being saved !</h4>
+        <h4 class="alert-heading">The following errors prevented the <%= model_object.class.name.downcase %> from being saved !</h4>
         <ul>
-            <% @article.errors.full_messages.each do |msg| %>
+            <% model_object.errors.full_messages.each do |msg| %>
                 <li>
                     <%= msg %>
                 </li>
