@@ -26,7 +26,7 @@
                     </li>
                     <li class="list-group-item">
                         <div class="font-weight-bold">Created By</div>
-                        <%= @article.user.username %>
+                        <%= link_to gravatar_for(@article.user, size: 40, classes: "rounded mr-2"), user_path(@article.user) %><%= @article.user.username %>
                     </li>
                 </ul>
                 <div class="card-footer text-center">

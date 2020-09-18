@@ -1,3 +1,11 @@
-<h1 class="text-center mt-4"><%= @user.username%>'s Articles</h1>
+<h1 class="text-center text-danger mt-4"><%= @user.username%>'s Profile</h1>
 
-<%= render 'articles/article' %>
+<%= gravatar_for @user, size: 180, classes: "rounded mt-4 shadow mx-auto d-block" %>
+
+<h3 class="text-center mt-4"> Articles </h3>
+
+<%= render 'shared/top_pagination', obj: @articles %>
+
+<%= render 'articles/article'   %>
+
+<%= render 'shared/bottom_pagination', obj: @articles %>

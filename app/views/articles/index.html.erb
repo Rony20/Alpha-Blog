@@ -1,3 +1,5 @@
 <h1 class="text-center mt-4">Listing All Articles</h1>
 
+<%= render 'shared/top_pagination', obj: @articles %>
 <%= render 'article' %>
+<%= render 'shared/bottom_pagination', obj: @articles %>
