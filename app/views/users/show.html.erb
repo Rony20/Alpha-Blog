@@ -3,7 +3,9 @@
 <%= gravatar_for @user, size: 180, classes: "rounded mt-4 shadow mx-auto d-block" %>
 
 <div class="text-center">
-    <%= link_to "Edit Profile", edit_user_path(@user), class: "text-center btn btn-info mt-4" %>
+    <% if logged_in? && @user == current_user %>
+        <%= link_to "Edit Profile", edit_user_path(@user), class: "text-center btn btn-info mt-4" %>
+    <% end %>
 </div>
 
 <h3 class="text-center mt-4"> Articles </h3>
