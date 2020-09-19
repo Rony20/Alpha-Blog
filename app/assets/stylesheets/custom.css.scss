@@ -21,11 +21,19 @@
 }
 
 .jumbotron {
-    background-image: asset-url("anastasiia-kamil.jpg");
+    background-image: asset-url("colored-pencils.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 68vh;
+}
+
+.text-purple {
+  color: rgba(133, 35, 133, 0.775) !important;
+}
+
+.text-purple-dark {
+  color: rgb(133, 35, 133) !important;
 }
 
 html,
